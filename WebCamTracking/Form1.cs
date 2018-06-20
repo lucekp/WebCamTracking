@@ -30,7 +30,6 @@ namespace WebCamTracking
             using (DirectBitmap modifiedFrameBitmap = new DirectBitmap(_webCam.CurrentFrameBitmap))
             {
                 //modifiedFrameBitmap.SetAllPixels();
-                modifiedFrameBitmap.SetPixel(100,200,new Rgb(Color.DarkRed));
                 modifiedFrameBitmap.SetPixel(100, 100, new Rgb(Color.DarkRed));
                 modifiedFrameBitmap.Unlock();
                 e.Graphics.DrawImage(modifiedFrameBitmap.Bitmap, 0, 0);
